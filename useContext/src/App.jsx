@@ -5,6 +5,7 @@ import Information from "./page/infromation"
 import Dashboard from "./page/Dashboard"
 import Login from "./page/Login"
 import PrivateRoute from "./components/PrivateRouter"
+import DogPage from "./page/DogPage"
 
 function App(){
   return(
@@ -17,7 +18,7 @@ function App(){
               <Route path="/dashboard" element={<Dashboard />}/>
               <Route path="/information" element={<Information />}/>
             </Route>
-            
+              <Route path="/dog" element={<DogPage />}/>   
           </Routes>
         </BrowserRouter>
       </AuthProvider>
